@@ -10,7 +10,6 @@ const App = () => {
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
-
         <Route
           exact
           path="/template/fill-details"

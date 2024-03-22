@@ -43,16 +43,22 @@ export default function ButtonMUI() {
               textAlign: "justify",
             }}
           >
-            Resume Building made easy and efficient.<br/>
-            <b>A Free, Quick and Easy Way to Create Your Professional Resume.</b><br/>
-            ResumeBuilder is created to help the users save time in building resumes.
-            With ResumeBuilder, a versatile resume can be made instantly 
-            with a potential from standing out of the crowd to landing the dream job.
-            One can select the template best fit for the purpose, upload the good profile picture, 
-            fill out the details regarding qualifications and work experience. and save the resume that is instantly built.
-            As simple as that. Saving all the time and efforts to make a resume.
-            One may also access the resumes pre made at any time with the My Resumes tab.
-            May all your dreams come true. All the very best!    
+            Resume Building made easy and efficient.
+            <br />
+            <b>
+              A Free, Quick and Easy Way to Create Your Professional Resume.
+            </b>
+            <br />
+            ResumeBuilder is created to help the users save time in building
+            resumes. With ResumeBuilder, a versatile resume can be made
+            instantly with a potential from standing out of the crowd to landing
+            the dream job. One can select the template best fit for the purpose,
+            upload the good profile picture, fill out the details regarding
+            qualifications and work experience. and save the resume that is
+            instantly built. As simple as that. Saving all the time and efforts
+            to make a resume. One may also access the resumes pre made at any
+            time with the My Resumes tab. May all your dreams come true. All the
+            very best!
           </Typography>
           <Stack
             sx={{
@@ -63,7 +69,7 @@ export default function ButtonMUI() {
             <img
               src={aboutCV}
               alt="img"
-            // style={{width:"20%", height:"10%"}}
+              // style={{width:"20%", height:"10%"}}
             />
           </Stack>
         </Stack>
@@ -97,7 +103,7 @@ export default function ButtonMUI() {
               />
             </Link>
 
-            <Link to="https://www.linkedin.com/in/deshmukhsahil/">
+            <Link to="https://www.linkedin.com/in/arunjay-rana-45a458236/">
               <LinkedInIcon
                 sx={{ fontSize: "40px", paddingLeft: "15px" }}
                 color="primary"
@@ -115,7 +121,7 @@ export default function ButtonMUI() {
                 color="info"
               />
             </Link>
-            <Link to="https://github.com/DeshmukhSahil">
+            <Link to="https://github.com/arunjaykumar">
               <GitHub
                 sx={{ fontSize: "40px", paddingLeft: "15px", color: "black" }}
               />

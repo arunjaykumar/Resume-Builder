@@ -1,8 +1,7 @@
-*{
-  padding:0px;
-  margin : 0px;
+* {
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
-  
 }
 .home {
   width: 100%;
@@ -27,7 +26,7 @@
 
 .templates-img-cont {
   width: 100%;
-  position: relative; 
+  position: relative;
 }
 
 .templates-img-cont:hover {
@@ -57,18 +56,18 @@
 .templates-img-cont:hover .MuiButtonBase-root.MuiButton-root {
   visibility: visible;
 }
-.homeInfoWrapper .grid{
+.homeInfoWrapper .grid {
   display: flex;
   justify-content: center;
-  padding: 50px ;
+  padding: 20px;
   text-align: center;
-  gap: 20px;
+  gap: 5px;
 }
-.item3{
+.item3 {
   word-wrap: wrap;
   position: relative;
 }
-.homeImage{
+.homeImage {
   width: 300px;
   height: 180px;
 }
@@ -81,9 +80,15 @@
   .home-templates-cont {
     padding: 20px 55px;
   }
-  }
+}
 
-
-*::-webkit-scrollbar {width: 7px;background-color:#f7f7f7} 
-*::-webkit-scrollbar-track {background-color:#474545} 
-*::-webkit-scrollbar-thumb { background-color:#f27979}
+*::-webkit-scrollbar {
+  width: 7px;
+  background-color: #f7f7f7;
+}
+*::-webkit-scrollbar-track {
+  background-color: #474545;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #f27979;
+}

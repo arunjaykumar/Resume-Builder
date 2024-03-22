@@ -46,7 +46,6 @@ const initialSkillsState = {
   skills: ["", "", ""],
 };
 
-
 export const selectedTemplateReducer = (
   state = initialSelectedTemplateState,
   action

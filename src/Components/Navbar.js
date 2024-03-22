@@ -25,7 +25,7 @@ function Navbar(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
+    setMobileOpen(mobileOpen);
   };
 
   const drawer = (
@@ -35,7 +35,7 @@ function Navbar(props) {
           {" "}
           <img
             src="https://www.almabetter.com/_next/image?url=https%3A%2F%2Falmablog-media.s3.ap-south-1.amazonaws.com%2Flogo1_edfc81b31b.png&w=256&q=75"
-            height="30px"
+            height="40px"
             alt="AlmaBetter"
           />
         </NavLink>
@@ -48,7 +48,8 @@ function Navbar(props) {
           textAlign: "left",
           paddingLeft: "20px",
           flexDirection: "column",
-        }}>
+        }}
+      >
         <NavLink className="nav-link" to="/" color="inherit">
           Resume Templates
         </NavLink>
@@ -66,7 +67,12 @@ function Navbar(props) {
     <>
       <Box sx={{ display: "flex" }}>
         <ThemeProvider theme={logoTheme}>
-          <AppBar component="nav" position="sticky" className="appbar" sx={{ color: "primary", boxShadow: "none" }}>
+          <AppBar
+            component="nav"
+            position="sticky"
+            className="appbar"
+            sx={{ color: "primary", boxShadow: "none" }}
+          >
             <Toolbar id="toolbar">
               <IconButton
                 color="inherit"
@@ -74,7 +80,8 @@ function Navbar(props) {
                 edge="start"
                 id="icon"
                 onClick={handleDrawerToggle}
-                sx={{ mr: 2, display: { sm: "none" } }}>
+                sx={{ mr: 2, display: { sm: "none" } }}
+              >
                 <MenuIcon />
               </IconButton>
               <Typography
@@ -86,7 +93,8 @@ function Navbar(props) {
                   fontSize: "25px",
                   position: "relative",
                   top: "5px",
-                }}>
+                }}
+              >
                 <NavLink to="/" className="homeIcon">
                   {" "}
                   <img
@@ -103,7 +111,11 @@ function Navbar(props) {
                 <NavLink to="/my/resumes" className="nav-link" color="inherit">
                   My Resumes
                 </NavLink>
-                <NavLink to="/about-us" className="nav-link aboutUs" color="inherit">
+                <NavLink
+                  to="/about-us"
+                  className="nav-link aboutUs"
+                  color="inherit"
+                >
                   About Us
                 </NavLink>
               </Box>
@@ -116,7 +128,7 @@ function Navbar(props) {
             open={mobileOpen}
             onClose={handleDrawerToggle}
             ModalProps={{
-              keepMounted: true, 
+              keepMounted: true,
             }}
             sx={{
               display: { xs: "block", sm: "none" },
@@ -124,7 +136,8 @@ function Navbar(props) {
                 boxSizing: "border-box",
                 width: drawerWidth,
               },
-            }}>
+            }}
+          >
             {drawer}
           </Drawer>
         </Box>

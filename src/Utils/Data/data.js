@@ -3,12 +3,12 @@ export const data = {
   personal_info: {
     first_name: "First",
     last_name: "Last",
-    email: "email1234@gmail.com",
+    email: "arunjay20.ak@gmail.com",
     mobile: "1234567890",
     address: "A-1, Anywhere, Anywhere",
     city: "Anycity",
     state: "Anystate",
-    postal_code: "546654",
+    postal_code: "825408",
     objective:
       "Learning development of Web-applications with ALMABETTER Full-Stack-Web-Development ",
   },
@@ -42,5 +42,13 @@ export const data = {
     start_year: "2016",
     end_year: "2022",
   },
-  key_skills: ["REACT", "DEVOPS","CYBER-SECURITY","ANYTHING", "JAVA", "Python", "DATA-STRUCTURES"],
+  key_skills: [
+    "REACT",
+    "DEVOPS",
+    "CYBER-SECURITY",
+    "ANYTHING",
+    "JAVA",
+    "Python",
+    "DATA-STRUCTURES",
+  ],
 };

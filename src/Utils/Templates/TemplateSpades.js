@@ -39,7 +39,8 @@ const Template1 = (props) => {
         },
       }}
       id={`${props.index}report`}
-      elevation={3}>
+      elevation={3}
+    >
       <HeaderSection
         primaryColor={"#2196f3"}
         secondaryColor={"black"}
@@ -51,20 +52,36 @@ const Template1 = (props) => {
         workExperience={workexperience}
       />
       <Container>
-        <TempHeading color={"#2196f3"} Hupcolor={"#2196f3"} Hupheight={"3px"} Hdowncolor={"none"} Hdownheight={"none"} title={"Professional Experience"} />
+        <TempHeading
+          color={"#2196f3"}
+          Hupcolor={"#2196f3"}
+          Hupheight={"3px"}
+          Hdowncolor={"none"}
+          Hdownheight={"none"}
+          title={"Professional Experience"}
+        />
         <ul style={{ marginBottom: 10 }}>
           {workexperience.map((experience, index) => {
-            return (
-              <ExperienceSection
-                key={index}
-                experience={experience}
-              />
-            );
+            return <ExperienceSection key={index} experience={experience} />;
           })}
         </ul>
-        <TempHeading color={"#2196f3"} Hupcolor={"#2196f3"} Hupheight={"3px"} Hdowncolor={"none"} Hdownheight={"none"} title={"Education"} />
+        <TempHeading
+          color={"#2196f3"}
+          Hupcolor={"#2196f3"}
+          Hupheight={"3px"}
+          Hdowncolor={"none"}
+          Hdownheight={"none"}
+          title={"Education"}
+        />
         <TemplateEducation education={educationinfo} />
-        <TempHeading color={"#2196f3"} Hupcolor={"#2196f3"} Hupheight={"3px"} Hdowncolor={"none"} Hdownheight={"none"} title={"Key Skills"} />
+        <TempHeading
+          color={"#2196f3"}
+          Hupcolor={"#2196f3"}
+          Hupheight={"3px"}
+          Hdowncolor={"none"}
+          Hdownheight={"none"}
+          title={"Key Skills"}
+        />
         <ul style={{ marginBottom: 10 }}>
           {skills.map((skill, index) => {
             return <TemplateKeySkill key={index} skill={skill} />;

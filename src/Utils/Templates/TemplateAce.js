@@ -39,7 +39,8 @@ const Template4 = (props) => {
         },
       }}
       id={`${props.index}report`}
-      elevation={3}>
+      elevation={3}
+    >
       <HeaderSection
         primaryColor={"#9B536F"}
         secondaryColor={"black"}
@@ -50,20 +51,36 @@ const Template4 = (props) => {
         workExperience={workexperience}
       />
       <Container>
-        <TempHeading color={"#9B536F"} Hupcolor={"none"} Hupheight={"none"} Hdowncolor={"#9B536F"} Hdownheight={"none"} title={"Professional Experience"} />
+        <TempHeading
+          color={"#9B536F"}
+          Hupcolor={"none"}
+          Hupheight={"none"}
+          Hdowncolor={"#9B536F"}
+          Hdownheight={"none"}
+          title={"Professional Experience"}
+        />
         <ul style={{ marginBottom: 10 }}>
           {workexperience.map((experience, index) => {
-            return (
-              <ExperienceSection
-                key={index}
-                experience={experience}
-              />
-            );
+            return <ExperienceSection key={index} experience={experience} />;
           })}
         </ul>
-        <TempHeading color={"#9B536F"} Hupcolor={"none"} Hupheight={"none"} Hdowncolor={"#9B536F"} Hdownheight={"none"} title={"Education"} />
+        <TempHeading
+          color={"#9B536F"}
+          Hupcolor={"none"}
+          Hupheight={"none"}
+          Hdowncolor={"#9B536F"}
+          Hdownheight={"none"}
+          title={"Education"}
+        />
         <TemplateEducation education={educationinfo} />
-        <TempHeading color={"#9B536F"} Hupcolor={"none"} Hupheight={"none"} Hdowncolor={"#9B536F"} Hdownheight={"none"} title={"Key Skills"} />
+        <TempHeading
+          color={"#9B536F"}
+          Hupcolor={"none"}
+          Hupheight={"none"}
+          Hdowncolor={"#9B536F"}
+          Hdownheight={"none"}
+          title={"Key Skills"}
+        />
         <ul style={{ marginBottom: 10 }}>
           {skills.map((skill, index) => {
             return <TemplateKeySkill key={index} skill={skill} />;
