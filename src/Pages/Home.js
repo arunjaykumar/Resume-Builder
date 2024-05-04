@@ -55,7 +55,10 @@ const Home = (props) => {
                     className="templates-img-cont"
                   >
                     <img
-                      style={{ width: "90%", height: "100%" }}
+                      style={{
+                        width: "90%",
+                        height: "100%",
+                      }}
                       className="template-img"
                       src={template.template_img}
                       alt={template.template_name}
@@ -64,11 +67,11 @@ const Home = (props) => {
                     <Button
                       className="use-template-btn"
                       onClick={() => navigateToFillDetails(template.id)}
-                      size="medium"
+                      size="large"
                       variant="contained"
-                      color="secondary"
+                      color="primary"
                     >
-                      Use Template
+                      Use me
                     </Button>
                   </Box>
                 );
